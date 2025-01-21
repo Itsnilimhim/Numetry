@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      flex: 1;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fc8019;
+      color: white;
+    }
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+    .navbar a:hover {
+      color: #333;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background-image: url('https://via.placeholder.com/1200x400');
+      background-size: cover;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero h1 .highlight {
+      color: #fc8019;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #000031;
+    }
+    .search-bar {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+    }
+    .btn {
+      padding: 0.8rem 2rem;
+      background: #fc8019;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #d76904;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: auto;
+    }
+    /* Section Styles */
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+      bottom: 0;
+      width: 100%;
+    }
+    #about {
+      background-color: #f1f1f1;
+    }
+    #contact {
+      background-color: #e4e4e4;
+    }
+    #login {
+      background-color: #d4d4d4;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      padding: 1rem 2rem;
+      background: #fc8019;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #d76904;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="navbar">
+      <div class="logo">Swiggy</div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+      </div>
+    </div>
+    
+    <!-- Home Section -->
+    <div id="home" class="hero">
+      <h1><span class="highlight">Your favorite food, delivered</h1></span>
+      <p>Order now from the best restaurants around you</p>
+      <input class="search-bar" type="text" placeholder="Enter your delivery location">
+      <br><br>
+      <button class="btn">Find Food</button>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+      <h2>About Us</h2>
+      <p>We are a leading food delivery service, bringing your favorite meals from the best restaurants to your doorstep.</p>
+      <p>Our mission is to make ordering food easier, faster, and more convenient for you.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Have any questions? Reach out to us!</p>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message" rows="5"></textarea>
+        <button>Send Message</button>
+      </div>
+    </div>
+
+    <!-- Login Section -->
+    <div id="login" class="section">
+      <h2>Login</h2>
+      <p>Login to access your account and track orders</p>
+      <div class="login-form">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn">Login</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Swiggy Clone. All Rights Reserved.
+  </div>
+</body>
+</html>
