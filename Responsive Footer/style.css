@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #fc8019;
+    color: white;
+  }
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  .navbar a:hover {
+    color: #333;
+  }
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    color: white;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero .highlight {
+    color: #fc8019;
+  }
+  .search-bar {
+    max-width: 500px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+  .btn {
+    padding: 0.8rem 2rem;
+    background: #fc8019;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background: #d76904;
+  }
+  .section {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  #about {
+    background-color: #f1f1f1;
+  }
+  #contact {
+    background-color: #e4e4e4;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .contact-form button {
+    padding: 1rem 2rem;
+    background: #fc8019;
+  }
+  footer {
+    background-color: #111;
+    color: white;
+  }
+  .footerContainer {
+    padding: 70px 30px 20px;
+    text-align: center;
+  }
+  .socialIcons a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 2em;
+    opacity: 0.9;
+  }
+  .footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+  }
+  .footerNav ul li a:hover {
+    opacity: 1;
+  }
+  .footerBottom {
+    padding: 20px;
+  }
+  .designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
